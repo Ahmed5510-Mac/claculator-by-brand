@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate your Rewards</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css" media="(max-width:996px)">
+
+</head>
+<body>
+    <section class="container">
+        <h1 class="title">Calculate your Rewards</h1>
+        <!-------- start form -------->
+        <form action="">
+            <!-- 1 -->
+            <div class="form-group">
+                <label for="vendor">Vendor/Bills</label>
+                <input type="number" placeholder=" Just Enter a number" name="vendor" id="vendor" oninput="this.value=Math.abs(this.value)">
+            </div>
+            <!-- 2 -->
+            <div class="form-group">
+                <label for="media">Media/Ad Spend</label>
+                <input type="number" placeholder="Just Enter a number" id="media" name="media" oninput="this.value=Math.abs(this.value)">
+            </div>
+            <!-- 3 -->
+            <div class="form-group">
+                <label for="cropSpend">Crop-spend</label>
+                <input type="number" placeholder="Just Enter a number" id="cropSpend" name="cropSpend" oninput="this.value=Math.abs(this.value)">
+            </div>
+            <!-- 4 -->
+            <div class="form-group">
+                <label for="teamProject">Team Project</label>
+                <input type="number" placeholder="Just Enter a number" id="teamProject" name="teamProject" oninput="this.value=Math.abs(this.value)">
+            </div>
+        </form>
+        <!--------End form-------->
+        <!--------Start brands-------->
+        <div class="brands">
+            <h4 class="title">Compare your Rewards</h4>
+            <div class="buttons">
+                <button> Brex</button>
+                <button> Stripe</button>
+                <button > Amex</button>
+            </div>
+            <button id="clearBtn"> Clear input </button>
+        </div>
+        <!--------End brands-------->
+        <!--------Start Rewaeds-------->
+        <div class="Rewaeds-wrapper">
+            <!-- card -->
+            <div class="card">
+                <img src="assets/card.png" alt="">
+                    <div class="text">
+                        <p>Brand :</p>
+                        <p>Unlimited rewards :</p>
+                        <p>lifetime rewards :</p>
+                    </div>
+                
+            </div>
+            <!-- progress par -->
+            <div class="progress">
+                        <div class="porogress-items">
+                            <span><span class="progree"style="width:0%" data-width="80%"></span></span>
+                            $<span>0.0</span> 
+                        </div>
+                        <div class="porogress-items">
+                            <span><span class="progree"style="width:0%" data-width="70%"></span></span>
+                           $<span>0.0</span> 
+                        </div>
+                        <div class="porogress-items">
+                            <span><span class="progree"style="width:0%" data-width="100%"></span></span>
+                            $<span>0.0</span> 
+                        </div>
+            </div>
+        </div>
+        <!--------End Rewaeds-------->
+        <!--------start Error massage-------->
+        <div class="layaout">
+            <div class="Error-boox">
+                <span>😱</span>
+                <p>PLZ Fill All Input</p>
+                click on me to hidden
+            </div>
+        </div>
+        <!--------End Error massage-------->
+       
+
+    </section>
+
+    
+    <script src="js/file.js"></script>
+</body>
+</html>
